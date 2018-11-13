@@ -30,7 +30,7 @@ listDevices() {
           alert("Bluetooth is enabled")
       },
       function() {
-          alert("The user did *not* enable Bluetooth")
+          alert("The user did Not enable Bluetooth")
       }
   )
   return true
