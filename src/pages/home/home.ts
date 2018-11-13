@@ -123,24 +123,9 @@ listDevices() {
     receipt += commands.TEXT_FORMAT.TXT_FONT_A
     receipt += commands.HORIZONTAL_LINE.HR2_58MM
     receipt += '\n'
-    receipt += commands.TEXT_FORMAT.TXT_FONT_A
-    receipt += '\x1b\x61\x01'+ 'Outsource Now 2018' + '\x0a\x0a\x0a\x0a' //The unicode symbols are for centering the text
-    let receip  = ""
-      receip += "Receipt\r\n\r\n", commands.TEXT_FORMAT.TXT_ALIGN_CT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_FONT_B;
-			receip += "TEL (123)-456-7890\r\n", commands.TEXT_FORMAT.TXT_ALIGN_RT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Thank you for shopping with us!\r\n\r\n", commands.TEXT_FORMAT.TXT_ALIGN_CT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Chicken             $10.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Hamburger           $20.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Pizza               $30.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Lemons              $40.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Drink               $50.00\r\n\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Excluded tax        $150.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Tax(5%)             $7.50\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_UNDERL_ON, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Total               $157.50\r\n\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_2WIDTH;
-			receip += "Payment             $200.00\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-			receip += "Change              $42.50\r\n\r\n", commands.TEXT_FORMAT.TXT_ALIGN_LT, commands.TEXT_FORMAT.TXT_FONT_A, commands.TEXT_FORMAT.TXT_WIDTH;
-      receip += '\n'
-
+    receipt += commands.TEXT_FORMAT.TXT_FONT_B
+    receipt += '\x1b\x61\x01'+ 'Thank you, call again!' + '\x0a\x0a\x0a\x0a' //The unicode symbols are for centering the text
+    receipt += '\n'
     this.printText(receipt)
 }
 
