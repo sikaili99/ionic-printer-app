@@ -76,7 +76,7 @@ listDevices() {
 //Data to be printed presented in jsonData format.....
     let jsonData = [
       { id: 1, name: "Cream soda beans and dry fish", price: 80.12},
-      { id: 2, name: "Beer", price: 6.50},git 
+      { id: 2, name: "Beer", price: 6.50},
       { id: 3, name: "Margarita Clasic", price: 12.99}
     ]
     const items = item => ({name: item.name, price: item.price})
